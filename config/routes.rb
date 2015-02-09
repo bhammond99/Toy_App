@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'static/welcome'
+
+  get 'static/display'
+
+  get 'static/about'
+
   resources :microposts
   resources :users
   
