@@ -11,6 +11,7 @@
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
 
+
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
@@ -29,15 +30,15 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="http://www.bootply.com" target="ext">About</a></li>
+            <li class="active"><%= link_to "Home", welcome_path %></li>
+            <li><%= link_to "About", about_path %></li>
             <!-- <li><a href="#contact">Register</a></li> -->
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <li><a href="#">Register</a></li>
-                <li><a href="#">Post</a></li>
-                <li><a href="#">Videos</a></li>
+                <li><%= link_to "Register", root_path %></li>
+                <li><%= link_to "Post", microposts_path %></li>
+                <li><%= link_to "Videos", display_path %></li>
                <!--  <li class="divider"></li> -->
                 <!-- <li><a href="#">Separated link</a></li>
                 <li><a href="#">One more separated link</a></li> -->
